@@ -145,10 +145,13 @@ body{
    padding-top:  50px; 
    padding-bottom: 50px;
    display: flex;
-   flex-direction: row;
+   /*flex-direction: row;*/
    justify-content: space-between;
+   margin: -20px;
 }
 .card{
+    flex: 50%;
+    margin: 20px;
     position:relative;
     border-radius: 20px;
     overflow: hidden;  /*Скрываем всё, что выпадает за пределы карточки*/
@@ -158,7 +161,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;  /*Маштабирует flex*/
+    /*flex-grow: 1;  /*Маштабирует flex*/
 }
 .card::before{
     z-index: -1;
@@ -208,4 +211,101 @@ body{
     height: 100%;
     z-index: -2;
     object-fit: cover; /*обрезать если выходит за границы*/
+}
+.section-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+.delivery-week{
+    padding: 100px 0;
+}
+.delivery-cards{
+    display: flex;
+    flex-wrap: wrap; /*Перенос на другую строку*/
+    margin: -15px;
+}
+.delivery-card{
+    margin: 15px;
+    position: relative;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.delivery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.delivery-tag{
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 5px 10px;
+}
+.tag_1-health{
+    background: #D0FD89;
+    color: #49494F;
+
+}
+.tag_2-health{
+    background: #AEBC41;
+    color: #fff
+
+}
+.tag_3-health{
+    background: #B86B78;
+    color: #fff;
+
+}
+.tag_4-health{
+    background: #D68334;
+    color: #fff;
+
+}
+.tag_5-health{
+    background: #CD6255;
+    color: #fff;
+
+}
+.tag_6-health{
+    background: #FFFDBF;
+    color: #49494F;
+
+}
+.tag_7-health{
+    background: #F6FDC8;
+    color: #49494F;
+
+}
+.tag_8-health{
+    background: #FEF7FE;
+    color: #49494F;
+
+}
+.section-grey{
+    background: #E5E5E5;
+}
+.category{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.tabs-card{
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+.tabs-image{
+    max-width: 100%;
+}
+.tabs-card-content{
+    padding: 23px;
 }
