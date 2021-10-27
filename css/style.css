@@ -410,7 +410,8 @@ body{
 }
 .advantages-content{
     display: flex;
-    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap; /*Перенос на другую строку*/
 
 }
 .advantages-card{
@@ -512,6 +513,9 @@ body{
     }
     .promo{
       flex-wrap: wrap;  
+    }
+    .advantages-content{
+        justify-content: center;
     }
     
 }
