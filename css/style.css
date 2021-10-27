@@ -403,14 +403,14 @@ body{
 /**************************************************************************/
 .section-title-advantages{
     margin-top: 110px;
-    margin-bottom: 52px;
+    margin-bottom: 37px;
     font-weight: 500;
     font-size: 32px;
     line-height: 23px;
 }
 .advantages-content{
     display: flex;
-    max-width: 100%;
+    margin: -15px;
     flex-wrap: wrap; /*Перенос на другую строку*/
 
 }
