@@ -91,7 +91,23 @@ body{
 }
 .slide-content{
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
+}
+.slider-buttons{
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button{
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
 }
 .slide-title{
     margin-top: 0;
@@ -386,12 +402,47 @@ body{
 }
 /**************************************************************************/
 .section-title-advantages{
-    padding-bottom: 52px;
+    margin-top: 110px;
+    margin-bottom: 52px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+}
+.advantages-content{
+    display: flex;
+    width: 100%;
+
+}
+.advantages-card{
+    margin: 15px;
+    max-width: 270px;
+    
+}
+.advantages-image{
+    width: 60px;
+    height: 60px;
+    margin:30px 105px;
+}
+.advantages-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000; 
+    margin-bottom: 13px; 
+}
+.advantages-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #49494F;
 }
 /**************************************************************************/
 .footer{
     padding: 40px 0;
     background: #F6F6F6;
+    margin-top: 152px;
 }
 .footer-wrapper{
     display: flex;
@@ -414,4 +465,61 @@ body{
 .social-link{
     margin-left: 20px;
     text-decoration: none;
+}
+@media (max-width:1260px){
+    .container{
+        max-width: 960px;
+    }
+    .search-form{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content{
+        flex-wrap: wrap;
+    }
+    .tabs-card{
+        max-width: calc(50% - 30px);
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+    .slide{
+        padding: 70px;
+    }
+    .delivery-card{
+        max-width: calc(50% - 30px);
+    }
+    .footer-logo{
+        margin-right: 40px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search-form{
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        min-width: 514px;
+    }
+    .promo{
+      flex-wrap: wrap;  
+    }
+    
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .tabs-card{
+       max-width: 100%;
+    }
 }
